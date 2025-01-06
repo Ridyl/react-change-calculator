@@ -1,1 +1,47 @@
-/* Add your custom css here */
+body {
+    padding: 50px;
+    background-color: rgb(15, 112, 197);
+}
+
+.title-wrapper {
+    border-bottom: 2px solid rgb(201, 201, 201);
+    margin-bottom: 25px;
+}
+
+#card-container {
+    justify-content: space-around;
+}
+
+#main-card {
+    padding: 25px;
+}
+
+h1 {
+    padding-bottom: 25px;
+    color: white;
+}
+
+input[type='number'] {
+    border-radius: 5px;
+    border: 2px solid rgb(194, 194, 194);
+    padding: 5px 0px 5px 0;
+}
+
+#right-card {
+    background-color: white;
+    border: 2px solid rgb(194, 194, 194);
+    border-radius: 7px;
+}
+
+.money {
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.output-num {
+    align-content: center;
+}
+
+#card-rows {
+    padding: 20px;
+}
