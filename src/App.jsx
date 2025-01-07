@@ -32,7 +32,7 @@ function App() {
         <div className="card money">
           <div className="card-body">
             <div className="card-title">{ denom }</div>
-            <p className="card-text output-num" data-testid={ id }>{ denomination[number] }</p>
+            <p className="card-text output-num" data-testid='denomination'>{ denomination[number] }</p>
           </div>
         </div>
       </div>
@@ -77,11 +77,11 @@ function App() {
       
         setDenomination(newDenomination);
         // Display green with how much change customer needs
-        outputRef.current.textContent = `Change for customer $${change.toFixed(2)}`;
+        outputRef.current.textContent = `The total change due is $${change.toFixed(2)}`;
         outputCardRef.current.className = 'card text-white bg-success';
       } else {
         // Display red with how much customer owes -- change has to be multiplied by -1 to display positive number
-        outputRef.current.textContent = `Did not recieve enough! Customer owes $${change.toFixed(2) * -1}`;
+        outputRef.current.textContent = `Additional money owed is $${change.toFixed(2) * -1}`;
         outputCardRef.current.className = 'card text-white bg-danger';
       }
     } else {
@@ -108,11 +108,11 @@ function App() {
             <div className='card-body'>
               <div className="row">
                 <p><strong>How much is due?</strong></p>
-                <input type='number' id='amount-due' data-testid='amount-due' onChange={ handleDue }></input>
+                <input type='number' id='amountDue' data-testid='amountDue' onChange={ handleDue }></input>
               </div>
               <div className="row">
                 <p><strong>How much was recieved?</strong></p>
-                <input type='number' id='amount-recieved' data-testis='amount-recieved' onChange={ handleRec }></input>
+                <input type='number' id='amountReceived' data-testid='amountReceived' onChange={ handleRec }></input>
               </div>
             </div>
             <div className="card-footer">
